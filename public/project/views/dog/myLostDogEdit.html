@@ -1,0 +1,54 @@
+<div ng-show="model.message" class="alert alert-info">
+    {{model.message}}
+</div>
+
+<div class="col-sm-8">
+    <form>
+        <div class="form-group">
+            <label for="dog-name">Dog's Name</label>
+            <input ng-model="model.lostDog.name"
+                   type="text"
+                   class="form-control"
+                   id="dog-name"
+                   placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="dog-breeds">Dog's Breeds</label>
+            <input ng-model="model.lostDog.breeds"
+                   type="text"
+                   class="form-control"
+                   id="dog-breeds"
+                   placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="dog-owner">Dog's Owner</label>
+            <input ng-model="model.lostDog.owner"
+                   type="text"
+                   class="form-control"
+                   id="dog-owner"
+                   placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="dog-phone">Owner's Contact Information</label>
+            <input ng-model="model.lostDog.phone"
+                   type="number"
+                   class="form-control"
+                   id="dog-phone"
+                   placeholder="">
+
+            <label for="text">LostDog Description</label>
+            <text-angular
+                    ta-toolbar="[['h1','h2','h3'],['bold','italics','underline','strikeThrough'],
+        ['ul','ol'],['justifyLeft','justifyCenter','justifyRight','justifyFull'],
+        ['indent','outdent'],['html']]"
+                    ng-model="model.lostDog.description"
+                    type="text"
+                    place-holder="describe the details of your dog"
+                    id="text">
+            </text-angular>
+        <a ng-click="model.updateLostDogs(model.lostDog)"
+           class="btn btn-primary  btn-block">Update</a>
+        <a ng-click="model.deleteLostDogs(model.did)"
+           class="btn btn-danger  btn-block">Delete</a>
+    </form>
+</div>

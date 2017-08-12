@@ -1,0 +1,175 @@
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+            <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+        </li>
+        <li>
+            <a href="#top" onclick=$("#menu-close").click();>Home</a>
+        </li>
+        <li>
+            <a href="#about" onclick=$("#menu-close").click();>About</a>
+        </li>
+        <li>
+            <a href="#services" onclick=$("#menu-close").click();>Services</a>
+        </li>
+        <li>
+            <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+        </li>
+        <li>
+            <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+        </li>
+    </ul>
+</nav>
+
+
+<!--<nav id="mainNav" class="navbar navbar-light navbar-fixed-top">-->
+    <!--<div class="container-fluid">-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--<div class="navbar-header">-->
+            <!--<a class="navbar-brand page-scroll" href="#!/main">Find Your Dog</a>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li>-->
+                    <!--<a class="cl-text-white navbar-brand cl-text-bold glyphicon glyphicon-dashboard"-->
+                       <!--ng-if="model.currentUser.roles.indexOf('ADMIN') > -1 "-->
+                       <!--href="#!/admin">-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="page-scroll"-->
+                       <!--ng-if="model.currentUser"-->
+                       <!--href="#!/profile">Welcome, {{model.currentUser.username}}</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
+
+<!-- Callout -->
+<aside class="callout">
+    <div class="text-vertical-center">
+        <h1>Don't let it stay out without you.</h1>
+        <a href="#!/allLostDogs" class="btn btn-dark btn-lg">Find All lost Dogs</a>
+        <a href="#!/allFoundDogs" class="btn btn-dark btn-lg">Find All found Dogs</a>
+    </div>
+</aside>
+
+<!-- Services -->
+<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<section id="services" class="services bg-primary">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Our Services</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-paw fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                <strong>I lost my dog</strong>
+                            </h4>
+                            <p>Post your lost dog as soon as possible</p>
+                            <a href="#!/iLostMyDog" class="btn btn-light">Click Me</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-ambulance fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                <strong>My lost dogs</strong>
+                            </h4>
+                            <p>Here are your lost dogs haven't been found yet</p>
+                            <a href="#!/myLostDogs" class="btn btn-light">Click Me</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                <strong>I found a dog</strong>
+                            </h4>
+                            <p>I found a dog waiting for its owner, please contact me</p>
+                            <a href="#" class="btn btn-light">Click Me</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                <strong>My found dogs</strong>
+                            </h4>
+                            <p>Here are your found dogs, thank you for your love</p>
+                            <a href="#" class="btn btn-light">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Call to Action -->
+<aside class="call-to-action bg-warning">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>If you find a lost dog, you can also send it to the place below.</h3>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- Map -->
+<section id="contact" class="map">
+    <!--<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>-->
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.179384128066!2d-122.33969324877735!3d47.62264419476058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153779e40853%3A0x191b4251f5be8b45!2sNortheastern+University+Seattle!5e0!3m2!1sen!2sus!4v1502342934219"></iframe>
+    <br />
+    <small>
+        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+    </small>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4><strong>Find Your Dog</strong>
+                </h4>
+                <p>401 Terry Ave
+                    <br>Seattle, WA 98109</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">shen.yanc@husky.neu.edu</a>
+                    </li>
+                </ul>
+                <br>
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; Find Your Dog</p>
+            </div>
+        </div>
+    </div>
+    <a id="to-top" href="#!/main" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</footer>
