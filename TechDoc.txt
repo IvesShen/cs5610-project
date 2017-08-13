@@ -1,0 +1,22 @@
+# CS5610 Web Development
+# Yanchao Shen
+
+    My Email        : shen.yanc@husky.neu.edu
+    My Github repo  : https://github.com/IvesShen/cs5610-project
+    My Heroku       : https://cs5610-webdev-yanchao.herokuapp.com
+
+
+    Database : using mongo db and mongoose
+
+    Front-end: using bootstrap, font-awesome, textAngular
+
+    Front-end routing: using angular-route
+
+    Third party API:
+        Google Map Api:
+            https://developers.google.com/maps/
+
+        Google+ Api:
+            https://developers.google.com/+/
+
+
