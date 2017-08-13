@@ -1,8 +1,41 @@
-<div class="container-fluid cl-container-padding-top0">
-    <ul class="list-group cl-list-group-borderless">
-        <li ng-repeat="foundDog in model.foundDogs" class="list-group-item cl-list-item-borderless">
-            <a href="#"><span class="glyphicon glyphicon-cog pull-right"></span></a>
-            <a href="#">{{foundDog.name}}|{{foundDog.breeds}}|{{foundDog.phone}}</a>
+<div class="container-fluid">
+    <ul class="list-group">
+        <li class="list-group-item active">
+            <div class="row">
+                <div class="col-xs-1">
+                    Name
+                </div>
+                <div class="col-xs-1">
+                    Breeds
+                </div>
+                <div class="col-xs-4">
+                    Description
+                </div>
+                <div class="col-xs-3">
+                    Finder's Information
+                </div>
+                <div class="col-xs-3">
+                    DateCreated
+                </div>
+            </div>
+        <li ng-repeat="foundDog in model.foundDogs" class="list-group-item">
+            <div class="row">
+                <div class="col-xs-1">
+                    <input ng-model="foundDog.name" class="form-control"/>
+                </div>
+                <div class="col-xs-1">
+                    <input ng-model="foundDog.breeds" class="form-control"/>
+                </div>
+                <div class="col-xs-4">
+                    <input ng-model="foundDog.description" class="form-control"/>
+                </div>
+                <div class="col-xs-3">
+                    <input ng-model="foundDog.phone" class="form-control"/>
+                </div>
+                <div class="col-xs-3">
+                    <input ng-model="foundDog.dateCreated" class="form-control"/>
+                </div>
+            </div>
         </li>
     </ul>
 </div>
