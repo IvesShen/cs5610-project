@@ -73,9 +73,25 @@
                     currentUser:checkLoggedIn
                 }
             })
+            .when('/iFoundADog', {
+                templateUrl : "views/dog/iFoundADog.html",
+                controller: "IFoundADog",
+                controllerAs: "model",
+                resolve:{
+                    currentUser:checkLoggedIn
+                }
+            })
             .when('/allLostDogs', {
                 templateUrl : "views/dog/allLostDogs.html",
                 controller: "AllLostDog",
+                controllerAs: "model",
+                resolve:{
+                    currentUser:checkLoggedIn
+                }
+            })
+            .when('/allFoundDogs', {
+                templateUrl : "views/dog/allFoundDogs.html",
+                controller: "AllFoundDog",
                 controllerAs: "model",
                 resolve:{
                     currentUser:checkLoggedIn
@@ -89,9 +105,25 @@
                     currentUser:checkLoggedIn
                 }
             })
+            .when('/myFoundDogs', {
+                templateUrl : "views/dog/myFoundDogs.html",
+                controller: "MyFoundDogs",
+                controllerAs: "model",
+                resolve:{
+                    currentUser:checkLoggedIn
+                }
+            })
             .when('/myLostDogEdit/:did', {
                 templateUrl : "views/dog/myLostDogEdit.html",
                 controller: "MyLostDogEdit",
+                controllerAs: "model",
+                resolve:{
+                    currentUser:checkLoggedIn
+                }
+            })
+            .when('/myFoundDogEdit/:did', {
+                templateUrl : "views/dog/myFoundDogEdit.html",
+                controller: "MyFoundDogEdit",
                 controllerAs: "model",
                 resolve:{
                     currentUser:checkLoggedIn

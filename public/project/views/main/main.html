@@ -1,54 +1,28 @@
-<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-<nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-        <li class="sidebar-brand">
-            <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
-        </li>
-        <li>
-            <a href="#top" onclick=$("#menu-close").click();>Home</a>
-        </li>
-        <li>
-            <a href="#about" onclick=$("#menu-close").click();>About</a>
-        </li>
-        <li>
-            <a href="#services" onclick=$("#menu-close").click();>Services</a>
-        </li>
-        <li>
-            <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-        </li>
-        <li>
-            <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-        </li>
-    </ul>
+<nav id="mainNav" class="navbar navbar-light navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand page-scroll" href="#!/main">Find Your Dog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="cl-text-white navbar-brand cl-text-bold glyphicon glyphicon-dashboard"
+                       ng-if="model.currentUser.roles.indexOf('ADMIN') > -1 "
+                       href="#!/admin">
+                    </a>
+                </li>
+                <li>
+                    <a class="page-scroll"
+                       ng-if="model.currentUser"
+                       href="#!/profile">Welcome, {{model.currentUser.username}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
-
-
-<!--<nav id="mainNav" class="navbar navbar-light navbar-fixed-top">-->
-    <!--<div class="container-fluid">-->
-        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
-        <!--<div class="navbar-header">-->
-            <!--<a class="navbar-brand page-scroll" href="#!/main">Find Your Dog</a>-->
-        <!--</div>-->
-
-        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
-        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
-            <!--<ul class="nav navbar-nav navbar-right">-->
-                <!--<li>-->
-                    <!--<a class="cl-text-white navbar-brand cl-text-bold glyphicon glyphicon-dashboard"-->
-                       <!--ng-if="model.currentUser.roles.indexOf('ADMIN') > -1 "-->
-                       <!--href="#!/admin">-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="page-scroll"-->
-                       <!--ng-if="model.currentUser"-->
-                       <!--href="#!/profile">Welcome, {{model.currentUser.username}}</a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</nav>-->
 
 <!-- Callout -->
 <aside class="callout">
@@ -104,7 +78,7 @@
                                 <strong>I found a dog</strong>
                             </h4>
                             <p>I found a dog waiting for its owner, please contact me</p>
-                            <a href="#" class="btn btn-light">Click Me</a>
+                            <a href="#!/iFoundADog" class="btn btn-light">Click Me</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -117,7 +91,7 @@
                                 <strong>My found dogs</strong>
                             </h4>
                             <p>Here are your found dogs, thank you for your love</p>
-                            <a href="#" class="btn btn-light">Learn More</a>
+                            <a href="#!/myFoundDogs" class="btn btn-light">Click Me</a>
                         </div>
                     </div>
                 </div>

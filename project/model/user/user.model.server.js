@@ -9,9 +9,10 @@ userModel.findUserByUsername = findUserByUsername;
 userModel.findUserByCredentials = findUserByCredentials;
 userModel.updateUser = updateUser;
 userModel.deleteUser = deleteUser;
-userModel.addWebsite = addWebsite;
+userModel.addFoundDog = addFoundDog;
 userModel.addLostDog = addLostDog;
 userModel.deleteLostDog = deleteLostDog;
+userModel.deleteFoundDog = deleteFoundDog;
 userModel.findUserByGoogleId = findUserByGoogleId;
 module.exports = userModel;
 
@@ -49,11 +50,11 @@ function deleteUser(userId) {
     return userModel.remove({_id: userId});
 }
 
-function addWebsite(userId, websiteId) {
+function addFoundDog(userId, dogId) {
     return userModel
         .findById(userId)
         .then(function (user) {
-            user.websites.push(websiteId);
+            user.foundDogs.push(dogId);
             return user.save(); //save it back to db
         });
 }
@@ -72,6 +73,15 @@ function deleteLostDog(userId, did) {
         .findOne({_id: userId})
         .then(function(user){
                 user.lostDogs.pull(did);
+                user.save();
+        });
+}
+
+function deleteFoundDog(userId, did) {
+    return userModel
+        .findOne({_id: userId})
+        .then(function(user){
+                user.foundDogs.pull(did);
                 user.save();
         });
 }

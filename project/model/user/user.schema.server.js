@@ -15,6 +15,10 @@ var userSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref : 'lostDogModel'
     }],
+    foundDogs : [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref : 'foundDogModel'
+    }],
     email : String,
     phone : String,
     dateCreated : {
