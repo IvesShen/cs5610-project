@@ -38,6 +38,22 @@
                     currentUser: checkAdmin
                 }
             })
+            .when('/admin/lostDogs', {
+                templateUrl : "views/user/admin-lostDogs.view.client.html",
+                controller: 'adminLostDogsController',
+                controllerAs: 'model',
+                resolve: {
+                    currentUser: checkAdmin
+                }
+            })
+            .when('/admin/foundDogs', {
+                templateUrl : "views/user/admin-foundDogs.view.client.html",
+                controller: 'adminFoundDogsController',
+                controllerAs: 'model',
+                resolve: {
+                    currentUser: checkAdmin
+                }
+            })
             .when('/register', {
                 templateUrl : "views/user/register.view.client.html",
                 controller: "RegisterController",
