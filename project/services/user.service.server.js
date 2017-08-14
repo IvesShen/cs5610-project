@@ -32,7 +32,7 @@ module.exports = function(app){
 
     app.get('/auth/google/callback',
         passport.authenticate('google', {
-            successRedirect: '/#!/profile',
+            successRedirect: '/#!/main',
             failureRedirect: '/#!/login'
         }));
 
