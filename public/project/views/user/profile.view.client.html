@@ -1,16 +1,4 @@
-<nav class="navbar narbar-default navbar-fixed-top cl-blue-navbar">
-
-
-    <!--Professor's template-->
-    <!--<div class="container">-->
-        <!--<a class="navbar-brand cl-navbar-text" href="#">-->
-            <!--Profile-->
-        <!--</a>-->
-        <!--<a ng-click="model.updateUser()" class="navbar-link navbar-text pull-right cl-navbar-text">-->
-            <!--<span class="glyphicon glyphicon-ok"></span>-->
-        <!--</a>-->
-    <!--</div>-->
-
+<nav class="navbar narbar-default navbar-fixed-top cl-black-navbar cl-header-padding">
     <div class="container-fluid">
         <a class="cl-text-white navbar-brand cl-text-bold" href="#">
             Profile
@@ -18,9 +6,6 @@
         <a class="cl-text-white navbar-brand cl-text-bold glyphicon glyphicon-dashboard"
            ng-if="model.currentUser.roles.indexOf('ADMIN') > -1 "
            href="#!/admin">
-        </a>
-        <a ng-click="model.updateUser()" class="navbar-link navbar-text pull-right cl-text-white cl-icon-padding">
-            <span class="glyphicon glyphicon-ok"></span>
         </a>
     </div>
 </nav>
@@ -35,9 +20,10 @@
 
 
 
-<div class="container">
+<div class="container-fluid bg-profile cl-text-white">
     <div ng-show="model.updated" class="alert alert-success" role="alert">{{model.updated}}</div>
-    <form class="cl-form-bottom-padding">
+    <div class="container-fluid test">
+        <form class="cl-form-bottom-padding">
         <label for="username">Username</label>
         <input ng-model="model.user.username"
                type="text"
@@ -63,14 +49,13 @@
                placeholder="last name"
                id="lName" required>
     </form>
-    <a href="#!/main"
-       class="btn btn-info btn-block">Enter Main Page</a>
-    <a ng-click="model.updateUser(model.user)"
-       class="btn btn-success btn-block">Update</a>
-    <a ng-click="model.unregister()"
-       class="btn btn-warning btn-block">Unregister</a>
-    <a ng-click="model.logout()"
-       class="btn btn-danger btn-block">Logout</a>
+        <a href="#!/main"
+           class="btn btn-info btn-block">Enter Main Page</a>
+        <a ng-click="model.updateUser(model.user)"
+           class="btn btn-success btn-block">Update</a>
+        <a ng-click="model.unregister()"
+           class="btn btn-warning btn-block">Unregister</a>
+        <a ng-click="model.logout()"
+           class="btn btn-danger btn-block">Logout</a>
+    </div>
 </div>
-
-<div ng-include="'views/common/footer-blue.view.client.html'"></div>

@@ -19,8 +19,8 @@ a:hover{
     padding-bottom: 10%;
 }
 
-.cl-blue-navbar{
-    background-color: #337ab7;
+.cl-black-navbar{
+    background-color: #000000;
 }
 
 .cl-text-white{
@@ -46,7 +46,7 @@ a:hover{
 }
 
 .cl-header-padding{
-    padding-left: 5%;
+    padding-left: 2%;
 }
 
 .cl-full-width{
@@ -141,8 +141,56 @@ a:hover{
     width: 100%;
     height: 100%;
 }
+.pagesize {
+    position: relative;
+    top: 0px;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .bg-login {
-    background-image: url("../img/bg-login.jpg");
+    background-image: url("../img/pexels-photo-10517.jpeg");
+}
+.bg-profile {
+    background-image: url("../img/dog-1194087_960_720.jpg");
     background-repeat: repeat-x;
+}
+.bg-register {
+    background-image: url("../img/pet-423398_960_720.jpg");
+    background-repeat: repeat-x;
+}
+.bg-ilostmydog {
+    background-image: url("../img/pet-423398_960_720.jpg");
+    background-repeat: repeat-x;
+}
+.bg-mylostdogs {
+    background-image: url("../img/pet-423398_960_720.jpg");
+    background-repeat: repeat-x;
+}
+.bg-ifoundadog {
+    background-image: url("../img/pet-423398_960_720.jpg");
+    background-repeat: repeat-x;
+}
+.bg-myfounddog {
+    background-image: url("../img/pet-423398_960_720.jpg");
+    background-repeat: repeat-x;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-black {
+    background-color: #000000;
 }
