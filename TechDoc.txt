@@ -12,6 +12,8 @@
 
     Front-end routing: using angular-route
 
+    Back-end: using bcrypt-nodejs, express, passport js, sessions, cookies
+
     Third party API:
         Google Map Api:
             https://developers.google.com/maps/

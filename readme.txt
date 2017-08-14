@@ -1,4 +1,4 @@
-# CS5610 Web Development
+# CS5610 Web Development Project
 # Yanchao Shen
 
     My Email        : shen.yanc@husky.neu.edu
@@ -37,7 +37,7 @@
     1.6 I lost my dog page
         You can post your lost dog's information here, you just need to click the map to post a marker, and the latitude and
         longitude information will be shown automatically.
-        (Tip: sometimes the map doesn't show up because of the google map loading issue, just refresh the page and it will work)
+        (Tip: sometimes the map doesn't show up because of the google map loading issue, just refresh the page and it will work :)
 
     1.7 my lost dogs page
         My lost dog page will list all of your lost dogs, and you can edit the information by click the gear icon on the right side.
@@ -79,5 +79,5 @@
     Password: admin
 
     Normal user:
-    Username: Alice
-    Password: Alice
+    Username: alice
+    Password: alice
