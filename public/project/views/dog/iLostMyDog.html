@@ -1,9 +1,20 @@
+<nav class="navbar narbar-default navbar-fixed-top cl-black-navbar cl-header-padding">
+    <div class="container-fluid">
+        <a class="cl-text-white navbar-brand glyphicon glyphicon-chevron-left" href="#!/main">
+            Main Page
+        </a>
+        <a class="cl-text-white navbar-brand glyphicon glyphicon-chevron-right pull-right" href="#!/myLostDogs">
+            My Lost Dogs
+        </a>
+    </div>
+</nav>
+
 <div>
     <div ng-show="model.error" class="alert alert-danger">
         {{model.error}}
     </div>
 
-    <div class="container cl-text-white bg-ilostmydog">
+    <div class="container-fluid cl-text-white bg-ilostmydog">
         <form class="cl-form-bottom-padding">
             <label for="dogName">Dog's Name</label>
             <input ng-model="model.dog.name"

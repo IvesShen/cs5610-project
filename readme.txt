@@ -64,7 +64,7 @@
         Here lists three (3) links to admin users, admin lost dogs, admin found dogs
 
     1.15 admin users
-        Here lists all users and their information, you can also delete users here.
+        Here lists all users and their information, you can also delete users or change other users' permission here.
 
     1.16 admin lost dogs
         Refer to admin users.

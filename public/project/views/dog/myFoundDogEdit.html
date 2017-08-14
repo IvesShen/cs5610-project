@@ -1,8 +1,17 @@
 <div ng-show="model.message" class="alert alert-info">
     {{model.message}}
 </div>
-
-<div class="col-sm-8">
+<nav class="navbar narbar-default navbar-fixed-top cl-black-navbar cl-header-padding">
+    <div class="container-fluid">
+        <a class="cl-text-white navbar-brand glyphicon glyphicon-chevron-left" href="#!/myFoundDogs">
+            My Found Dogs
+        </a>
+        <a class="cl-text-white navbar-brand glyphicon glyphicon-chevron-right pull-right" href="#!/main">
+            Main Page
+        </a>
+    </div>
+</nav>
+<div class="container-fluid cl-text-white bg-ifoundadog">
     <form>
         <div class="form-group">
             <label for="dog-name">Dog's Name</label>

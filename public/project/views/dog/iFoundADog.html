@@ -1,9 +1,19 @@
 <div>
-<div ng-show="model.error" class="alert alert-danger">
-    {{model.error}}
-</div>
+    <div ng-show="model.error" class="alert alert-danger">
+        {{model.error}}
+    </div>
+    <nav class="navbar narbar-default navbar-fixed-top cl-black-navbar cl-header-padding">
+        <div class="container-fluid">
+            <a class="cl-text-white navbar-brand glyphicon glyphicon-chevron-left" href="#!/main">
+                Main Page
+            </a>
+            <a class="cl-text-white navbar-brand glyphicon glyphicon-chevron-right pull-right" href="#!/myFoundDogs">
+                My Found Dogs
+            </a>
+        </div>
+    </nav>
 
-<div class="container">
+<div class="container-fluid cl-text-white bg-ifoundadog">
     <form class="cl-form-bottom-padding">
         <label for="dogName">Dog's Name</label>
         <input ng-model="model.dog.name"

@@ -1,11 +1,7 @@
 <nav class="navbar narbar-default navbar-fixed-top cl-black-navbar cl-header-padding">
     <div class="container-fluid">
-        <a class="cl-text-white navbar-brand cl-text-bold" href="#">
-            Profile
-        </a>
-        <a class="cl-text-white navbar-brand cl-text-bold glyphicon glyphicon-dashboard"
-           ng-if="model.currentUser.roles.indexOf('ADMIN') > -1 "
-           href="#!/admin">
+        <a class="cl-text-white navbar-brand glyphicon glyphicon-chevron-left" href="#!/main">
+            Main Page
         </a>
     </div>
 </nav>
@@ -49,8 +45,6 @@
                placeholder="last name"
                id="lName" required>
     </form>
-        <a href="#!/main"
-           class="btn btn-info btn-block">Enter Main Page</a>
         <a ng-click="model.updateUser(model.user)"
            class="btn btn-success btn-block">Update</a>
         <a ng-click="model.unregister()"

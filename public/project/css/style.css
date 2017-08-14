@@ -163,19 +163,15 @@ a:hover{
 }
 .bg-ilostmydog {
     background-image: url("../img/pet-423398_960_720.jpg");
-    background-repeat: repeat-x;
 }
 .bg-mylostdogs {
     background-image: url("../img/pet-423398_960_720.jpg");
-    background-repeat: repeat-x;
 }
 .bg-ifoundadog {
-    background-image: url("../img/pet-423398_960_720.jpg");
-    background-repeat: repeat-x;
+    background-image: url("../img/dog-715545_960_720.jpg");
 }
 .bg-myfounddog {
     background-image: url("../img/pet-423398_960_720.jpg");
-    background-repeat: repeat-x;
 }
 
 
